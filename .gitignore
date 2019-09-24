@@ -1,0 +1,14 @@
+# Experiment and dataset folders
+dataset/
+experimental/
+models/
+
+# Extensions
+*.jpg
+*.jpeg
+*.png
+*.h5
+
+# Others
+__pycache__
+.ipynb_checkpoints

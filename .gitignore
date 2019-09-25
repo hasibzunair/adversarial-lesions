@@ -8,6 +8,7 @@ models/
 *.jpeg
 *.png
 *.h5
+*.npy
 
 # Others
 __pycache__

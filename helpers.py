@@ -1,7 +1,7 @@
 import pylab
 import matplotlib.pyplot as plt
 import numpy as np
-
+import os
 
 # Declaring constants
 FIG_WIDTH=20 # Width of figure
@@ -10,6 +10,19 @@ RESIZE_DIM=28 # The images will be resized to 28x28 pixels
 
 
 
+def create_directory(directory):
+    '''
+    Creates a new folder in the specified directory if the folder doesn't exist.
+    INPUT
+        directory: Folder to be created, called as "folder/".
+    OUTPUT
+        New folder in the current directory.
+    '''
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+        
+        
 def show_images(images, cols = 1, titles = None, save_fig = "default"):
     """Display a list of images in a single figure with matplotlib.
     

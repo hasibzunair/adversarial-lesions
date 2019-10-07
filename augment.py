@@ -21,6 +21,9 @@ model_path = os.path.join(ROOT_DIR, "models")
 x_train = np.load("{}/x_baln.npy".format(dataset_path))
 y_train = np.load("{}/y_baln.npy".format(dataset_path))
 
+
+
+# 1
 seq = iaa.Sequential([
     iaa.ContrastNormalization((0.5, 1.5)),
     
@@ -57,8 +60,31 @@ seq = iaa.Sequential([
         iaa.ChangeColorspace(from_colorspace="HSV", to_colorspace="RGB")
     ]),
     
-    
 ], random_order=True) # apply augmenters in random order
+
+
+
+# 2
+seq_custom = iaa.Sequential([
+    iaa.ContrastNormalization((0.5, 1.5)),
+    iaa.Sometimes(0.5,
+        iaa.GaussianBlur(sigma=(0, 0.5))
+    ),
+    iaa.Sometimes(0.7, 
+        iaa.AdditiveGaussianNoise(loc=0, scale=(0.0, 0.05*255), per_channel=0.5)
+    ),
+    iaa.Affine(
+        rotate=(-25, 25),
+    ),
+    iaa.Affine(
+        translate_percent={"x": (-0.2, 0.2), "y": (-0.2, 0.2)},
+    ),
+    iaa.Affine(
+        shear=(-25, 25)
+    ),
+], random_order=True) # apply augmenters in random order
+
+
 
 def augment_data_minimal( x_values, y_values ):
     counter = 0
@@ -70,7 +96,7 @@ def augment_data_minimal( x_values, y_values ):
             
             # seq 1
             Y_values_augmented.append( y_values[counter] )
-            images_aug = seq.augment_images(x.reshape(1,RESIZE_DIM,RESIZE_DIM,3))   
+            images_aug = seq_custom.augment_images(x.reshape(1,RESIZE_DIM,RESIZE_DIM,3))   
             X_values_augmented.append( images_aug.reshape(RESIZE_DIM,RESIZE_DIM,3))
         counter = counter + 1
     

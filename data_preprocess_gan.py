@@ -9,7 +9,6 @@ import helpers
 
 def get_data(path):
     img=cv2.imread(path)
-    img=cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     return img
 
 

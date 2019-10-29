@@ -2,6 +2,7 @@
 dataset/
 experimental/
 models/
+outputs/
 
 # Extensions
 *.jpg

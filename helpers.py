@@ -23,7 +23,7 @@ def shuffle_dataset(x_train, y_train):
     
 def plot_hist(img):
     
-    img_flat = img_3d.flatten()
+    img_flat = img.flatten()
     print(min(img_flat), max(img_flat))
     plt.hist(img_flat, bins=20, color='c')
     plt.title("Data distribution")

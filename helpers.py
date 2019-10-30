@@ -8,8 +8,6 @@ FIG_WIDTH=20 # Width of figure
 HEIGHT_PER_ROW=3 # Height of each row when showing a figure which consists of multiple rows
 RESIZE_DIM=28 # The images will be resized to 28x28 pixels
 
-
-
 def shuffle_dataset(x_train, y_train):
     
     print("Shuffling data")
@@ -19,6 +17,7 @@ def shuffle_dataset(x_train, y_train):
     y_train = y_train[s]
     
     return x_train, y_train
+
 
 
 def create_directory(directory):
@@ -33,8 +32,8 @@ def create_directory(directory):
         os.makedirs(directory)
 
         
-        
-def show_images(images, cols = 1, titles = None, save_fig = "default"):
+
+def show_images(images, cols = 1, titles = None, save_fig = "default", path = None):
     """Display a list of images in a single figure with matplotlib.
     
     Parameters
@@ -53,6 +52,7 @@ def show_images(images, cols = 1, titles = None, save_fig = "default"):
     n_images = len(images)
     if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
     fig = plt.figure()
+    
     #fig.set_title("Samples of infected red blood cells")
     
     for n, (image, title) in enumerate(zip(images, titles)):
@@ -63,7 +63,8 @@ def show_images(images, cols = 1, titles = None, save_fig = "default"):
         plt.axis("off")
         a.set_title(title)
     fig.set_size_inches(np.array(fig.get_size_inches()) * n_images)
-    #plt.savefig('{}'.format(save_fig), dpi=50)
+    
+    if path is not None: plt.savefig('{}/{}.png'.format(path, save_fig), dpi=50)
     plt.show()
 
 

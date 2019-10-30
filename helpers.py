@@ -8,6 +8,7 @@ FIG_WIDTH=20 # Width of figure
 HEIGHT_PER_ROW=3 # Height of each row when showing a figure which consists of multiple rows
 RESIZE_DIM=28 # The images will be resized to 28x28 pixels
 
+
 def shuffle_dataset(x_train, y_train):
     
     print("Shuffling data")
@@ -19,6 +20,18 @@ def shuffle_dataset(x_train, y_train):
     return x_train, y_train
 
 
+    
+def plot_hist(img):
+    
+    img_flat = img_3d.flatten()
+    print(min(img_flat), max(img_flat))
+    plt.hist(img_flat, bins=20, color='c')
+    plt.title("Data distribution")
+    plt.xlabel("Pixel values")
+    plt.grid(True)
+    plt.ylabel("Frequency")
+    plt.show()
+    
 
 def create_directory(directory):
     '''
@@ -110,21 +123,3 @@ def imshow_group(X,y,y_pred=None,n_per_row=10,phase='processed'):
     plt.show()
 
     
-    
-
-    '''
-
-    
-    img_3d = inp_feat[0]
-img_flat = img_3d.flatten()
-print(min(img_flat), max(img_flat))
-
-
-plt.hist(img_flat, bins=20, color='c')
-plt.title("Original input data distribution")
-plt.xlabel("Raw")
-plt.grid(True)
-plt.ylabel("Frequency")
-plt.show()
-
-'''

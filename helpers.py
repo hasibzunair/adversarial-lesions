@@ -9,15 +9,15 @@ HEIGHT_PER_ROW=3 # Height of each row when showing a figure which consists of mu
 RESIZE_DIM=28 # The images will be resized to 28x28 pixels
 
 
-def shuffle_dataset(x_train, y_train):
+def shuffle_dataset(x, y):
     
     print("Shuffling data")
-    s = np.arange(x_train.shape[0])
+    s = np.arange(x.shape[0])
     np.random.shuffle(s)
-    x_train = x_train[s]
-    y_train = y_train[s]
+    x = x[s]
+    y = y[s]
     
-    return x_train, y_train
+    return x, y
 
 
     

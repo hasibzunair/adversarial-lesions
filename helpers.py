@@ -64,7 +64,7 @@ def show_images(images, cols = 1, titles = None, save_fig = "default", path = No
     assert((titles is None)or (len(images) == len(titles)))
     n_images = len(images)
     if titles is None: titles = ['Image (%d)' % i for i in range(1,n_images + 1)]
-    fig = plt.figure(wspace=0, hspace=0)
+    fig = plt.figure()
     
     #fig.set_title("Samples of infected red blood cells")
     

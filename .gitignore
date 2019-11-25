@@ -3,6 +3,7 @@ dataset/
 experimental/
 models/
 outputs/
+derm7pt/
 
 # Extensions
 *.jpg

@@ -5,6 +5,11 @@ import cv2
 import numpy as np
 from tqdm import tqdm
 from keras.utils import np_utils
+
+
+# Root directory of the project
+ROOT_DIR = os.path.abspath("../")
+sys.path.append(ROOT_DIR)  
 import helpers
 
 '''Save data in numpy format'''
@@ -20,8 +25,6 @@ def get_data(path):
     return img
 
 
-# Root directory of the project
-ROOT_DIR = os.path.abspath(".")
 # Raw dataset path
 DATASET = os.path.join(ROOT_DIR, 'dataset')
 

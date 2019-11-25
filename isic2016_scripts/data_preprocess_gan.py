@@ -4,16 +4,17 @@ import os
 import cv2
 import numpy as np
 from tqdm import tqdm
-import helpers
 
+# Root directory of the project
+ROOT_DIR = os.path.abspath("../")
+sys.path.append(ROOT_DIR)  
+import helpers
 
 def get_data(path):
     img=cv2.imread(path)
     return img
 
 
-#Root directory of the project
-ROOT_DIR = os.path.abspath(".")
 # Training file directory
 DATASET = os.path.join(ROOT_DIR, 'dataset')
 

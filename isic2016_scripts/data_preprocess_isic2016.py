@@ -5,7 +5,7 @@ import cv2
 import numpy as np
 from tqdm import tqdm
 from keras.utils import np_utils
-
+import sys
 
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")

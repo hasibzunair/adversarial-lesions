@@ -104,10 +104,10 @@ def construct_numpy(images, meta, fname, lname):
     print(inp_feat.shape, g_t.shape)
     
     # Create directory
-    helpers.create_directory("dataset/isic2016numpy/")
+    helpers.create_directory("{}/isic2016numpy/".format(DATASET))
     # Save
-    np.save("dataset/isic2016numpy/{}.npy".format(fname), inp_feat)
-    np.save("dataset/isic2016numpy/{}.npy".format(lname), g_t)
+    np.save("{}/isic2016numpy/{}.npy".format(DATASET, fname), inp_feat)
+    np.save("{}/isic2016numpy/{}.npy".format(DATASET, lname), g_t)
     
     print("Done!")
     

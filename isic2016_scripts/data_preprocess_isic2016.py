@@ -12,7 +12,7 @@ ROOT_DIR = os.path.abspath("../")
 sys.path.append(ROOT_DIR)  
 import helpers
 
-'''Save data in numpy format'''
+'''Save images and labels in numpy format'''
 
 def crop_and_resize(img, resize_dim=256):
     img=cv2.resize(img,(resize_dim,resize_dim),interpolation=cv2.INTER_AREA)

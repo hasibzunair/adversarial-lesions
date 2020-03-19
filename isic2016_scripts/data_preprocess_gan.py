@@ -6,6 +6,8 @@ import numpy as np
 from tqdm import tqdm
 import sys
 
+"""Make two groups according to class labels (Malignant and Benign)"""
+
 # Root directory of the project
 ROOT_DIR = os.path.abspath("../")
 sys.path.append(ROOT_DIR)  
@@ -23,12 +25,13 @@ helpers.create_directory("{}/isic2016gan/".format(DATASET))
 NEW_DATASET_PATH = "{}/{}".format(DATASET, "isic2016gan")
 NEW_DATASET_PATH
 
-helpers.create_directory("{}/normal".format(NEW_DATASET_PATH))
-helpers.create_directory("{}/cancer".format(NEW_DATASET_PATH))
+helpers.create_directory("{}/trainA".format(NEW_DATASET_PATH))
+helpers.create_directory("{}/trainB".format(NEW_DATASET_PATH))
 
-# new paths
-CANCER_FOLDER = "{}/cancer".format(NEW_DATASET_PATH)
-NORMAL_FOLDER = "{}/normal".format(NEW_DATASET_PATH)
+
+# Learn mapping from normal lesions to maligant lesions
+NORMAL_FOLDER = "{}/trainA/".format(NEW_DATASET_PATH)
+CANCER_FOLDER = "{}/trainB/".format(NEW_DATASET_PATH)
 
 CANCER_FOLDER, NORMAL_FOLDER
 
@@ -59,10 +62,10 @@ for f, l in tqdm(zip(filenames[:], labels[:])):
     img = get_data(f)
     
     if l == 0.0:
-            cv2.imwrite(NORMAL_FOLDER + '/normal' + str(number) + ".jpeg", img)
+            cv2.imwrite(NORMAL_FOLDER + str(number) + ".jpeg", img)
             img=None
     else:
-        cv2.imwrite(CANCER_FOLDER + '/cancer' + str(number) + ".jpeg", img)
+        cv2.imwrite(CANCER_FOLDER + str(number) + ".jpeg", img)
         img=None
     number+=1
 

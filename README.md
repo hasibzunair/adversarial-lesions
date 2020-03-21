@@ -2,7 +2,7 @@
 
 This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* accepted in the Journal of Physics in Medicine and Biology (PMB).
 
-**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis.Here we demonstrate an opposite perspective: rather than devising solutions against interclass variation, we shift our efforts to leverage interclass variation to improve image detection.
+**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: rather than devising solutions against interclass variation, we shift our efforts to leverage interclass variation to improve melanoma detection.
 
 
 ### Get started

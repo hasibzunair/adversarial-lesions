@@ -1,7 +1,0 @@
-Make a folder in dataset named isic2016 and keep images and annotations there
-
-Run dataprocessisic to get numpoys
-Run datagan to get data for training gan (two folders malig and benign)
-Run traincyclegan 
-Run upsampler to get upsampled data
-Train

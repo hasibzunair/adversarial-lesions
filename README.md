@@ -4,8 +4,16 @@ This code is part of the supplementary materials for our paper titled *Melanoma 
 
 **TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: rather than devising solutions against interclass variation, we shift our efforts to leverage interclass variation to improve melanoma detection.
 
+Paper details will be added soon.
 
-### Get started
+### Major Requirements
+
+* Python: 3.6
+* Tensorflow: 2.0.0
+* Keras: 2.3.1
+
+
+### Getting started
 
 * Download dataset from https://challenge.kitware.com/#phase/5667455bcad3a56fac786791
 * Clone this repo (obviously!)
@@ -16,5 +24,9 @@ This code is part of the supplementary materials for our paper titled *Melanoma 
 * Run `upsampler.ipynb` to oversample the minority class and balance the dataset
 * Train classifier using `train_ISIC_2016.ipynb` and evalute on the ISIC 2016 test set
 
+### Models
+Weight file for both the translation and classification models will be made available soon. (Weight files are in my lab's secondary computer and I cannot excess remotely nor can I go due to pandemic!)
 
-More details will be added soon.
+### License
+
+Your driver's license.

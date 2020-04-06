@@ -3,7 +3,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os
 
-# Declaring constants
+
+"""Helper functions"""
+
 FIG_WIDTH=20 # Width of figure
 HEIGHT_PER_ROW=3 # Height of each row when showing a figure which consists of multiple rows
 RESIZE_DIM=28 # The images will be resized to 28x28 pixels

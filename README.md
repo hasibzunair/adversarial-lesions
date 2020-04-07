@@ -10,7 +10,7 @@ Authors: Hasib Zunair and A. Ben Hamza
 
 
 <p align="center">
-<a href="#"><img src="media/visuals.png"></a>
+<a href="#"><img src="media/visuals.png" width="40%"></a>
 </p>
 
 Paper details will be added soon.

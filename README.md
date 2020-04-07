@@ -6,7 +6,7 @@ This code is part of the supplementary materials for our paper titled *Melanoma 
 
 Authors: Hasib Zunair and A. Ben Hamza
 
-**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: we train a translation model to learn the interclass mappings(benign to malignant) and boost the minority class(malignant) using the orginal benign images.
+**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: we leverage this aspect to train a translation model to learn the interclass mappings(benign to malignant) and boost the minority class(malignant) using the orginal benign images and then train the classification model.
 
 
 <p align="center">

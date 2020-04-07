@@ -6,9 +6,6 @@ outputs/
 derm7pt/
 
 # Extensions
-*.jpg
-*.jpeg
-*.png
 *.h5
 *.npy
 

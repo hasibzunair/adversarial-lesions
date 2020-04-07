@@ -1,8 +1,17 @@
-## Melanoma Detection using Adversarial Training and Deep Transfer Learning
+# Melanoma Detection using Adversarial Training and Deep Transfer Learning
 
-This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* accepted in the Journal of Physics in Medicine and Biology (PMB).
+## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 
-**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: rather than devising solutions against interclass variation, we shift our efforts to leverage interclass variation to improve melanoma detection.
+This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* accepted for publication in the Journal of Physics in Medicine and Biology (PMB).
+
+Authors: Hasib Zunair and A. Ben Hamza
+
+**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: we train a translation model to learn the interclass mappings(benign to malignant) and boost the minority class(malignant) using the orginal benign images.
+
+
+<p align="center">
+<a href="#"><img src="media/visuals.png"></a>
+</p>
 
 Paper details will be added soon.
 

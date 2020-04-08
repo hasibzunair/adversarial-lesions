@@ -1,8 +1,10 @@
-# Melanoma Detection using Adversarial Training and Deep Transfer Learning
+# [Melanoma Detection using Adversarial Training and Deep Transfer Learning](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3/pdf)
 
 ## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 
 This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* accepted for publication in the Journal of Physics in Medicine and Biology (PMB).
+
+Full text of accepted version avaiable at [RG](https://www.researchgate.net/publication/340467505_Melanoma_detection_using_adversarial_training_and_deep_transfer_learning). 
 
 Authors: Hasib Zunair and A. Ben Hamza
 
@@ -11,8 +13,6 @@ Authors: Hasib Zunair and A. Ben Hamza
 <p align="center">
 <a href="#"><img src="media/visuals.png" width="85%"></a>
 </p>
-
-Paper details will be added soon.
 
 ### Major Requirements
 

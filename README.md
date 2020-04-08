@@ -17,7 +17,7 @@ Authors: Hasib Zunair and A. Ben Hamza
 
 ### Citation
 
-To cite this article before publication: Hasib Zunair et al 2020 Phys. Med. Biol. in press https://doi.org/10.1088/1361-6560/ab86d3
+To cite this article before publication: Hasib Zunair et al 2020 Phys. Med. Biol. In press https://doi.org/10.1088/1361-6560/ab86d3
 
 
 

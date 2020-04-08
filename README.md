@@ -14,6 +14,13 @@ Authors: Hasib Zunair and A. Ben Hamza
 <a href="#"><img src="media/visuals.png" width="85%"></a>
 </p>
 
+
+### Citation
+
+To cite this article before publication: Hasib Zunair et al 2020 Phys. Med. Biol. in press https://doi.org/10.1088/1361-6560/ab86d3
+
+
+
 ### Major Requirements
 
 * Python: 3.6
@@ -34,6 +41,7 @@ Authors: Hasib Zunair and A. Ben Hamza
 
 ### Models
 Weight file for both the translation and classification models will be made available soon. (Weight files are in my lab's secondary computer and I cannot excess remotely nor can I go due to pandemic!)
+
 
 ### License
 

@@ -41,12 +41,12 @@ A conda file will be added soon!
 * In this directory, make a folder in `dataset` named `isic2016` and keep all files there
 * To build training set and test set
 
-``` python data_process_isic2016.py
+```python data_process_isic2016.py
 ```
 
 * To sort images for training CycleGAN (two folders malignant and benign)
 
-``` python data_process_gan.py
+```python data_process_gan.py
 ``` 
 
 

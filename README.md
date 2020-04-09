@@ -8,6 +8,7 @@ Full text of accepted version avaiable at [RG](https://www.researchgate.net/publ
 
 Authors: Hasib Zunair and A. Ben Hamza
 
+
 **TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: we learn the interclass mappings(benign to malignant) and boost the minority class(malignant) using the orginal benign images and then train the classification model.
 
 <p align="left">
@@ -30,7 +31,7 @@ This code requires
 * Tensorflow: 2.0.0
 * Keras: 2.3.1
 
-A conda file will be added soon.
+A conda file will be added soon!
 
 
 ### Preparing training and test datasets
@@ -40,11 +41,13 @@ A conda file will be added soon.
 * In this directory, make a folder in `dataset` named `isic2016` and keep all files there
 * To build training set and test set
 
-```python data_process_isic2016.py```
+```python data_process_isic2016.py`
+``
 
 * To sort images for training CycleGAN (two folders malignant and benign)
 
-```python data_process_gan.py``` 
+```python data_process_gan.py
+``` 
 
 
 

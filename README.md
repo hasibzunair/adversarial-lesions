@@ -42,11 +42,13 @@ A conda file will be added soon!
 * To build training set and test set
 
 ```python data_process_isic2016.py
+
 ```
 
 * To sort images for training CycleGAN (two folders malignant and benign)
 
 ```python data_process_gan.py
+
 ``` 
 
 

@@ -82,7 +82,7 @@ Weight file for both the translation and classification model is made available 
 We report the AUC, Sensitivity and False negatives on the ISIC 2016 test set.
 
 <p align="left">
-<a href="#"><img src="media/test_results.png" width="85%"></a>
+<a href="#"><img src="media/test_results.png" width="100%"></a>
 </p>
 
 UMAP embeddings of the original benign and malignant lesions (left) and with the generated malignant lesions (right).

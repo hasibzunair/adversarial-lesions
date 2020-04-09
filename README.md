@@ -41,7 +41,7 @@ To cite this article before publication: Hasib Zunair et al 2020 Phys. Med. Biol
 * Train classifier using `train_ISIC_2016.ipynb` and evalute on the ISIC 2016 test set
 
 ### Models
-Weight file for both the translation and classification models will be made available soon. (Weight files are in my lab's secondary computer and I cannot excess remotely nor can I go due to pandemic!)
+Weight file for both the translation and classification model is made available under releases. 
 
 
 ### License

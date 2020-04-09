@@ -25,7 +25,6 @@ Authors: Hasib Zunair and A. Ben Hamza
     journal={Physics in Medicine & Biology},
     url={http://iopscience.iop.org/10.1088/1361-6560/ab86d3},
     year={2020}
-    
 ```
 
 

@@ -19,7 +19,13 @@ Authors: Hasib Zunair and A. Ben Hamza
 ### Citation
 
 ```
-To cite this article before publication: Hasib Zunair et al 2020 Phys. Med. Biol. In press https://doi.org/10.1088/1361-6560/ab86d3
+@article{10.1088/1361-6560/ab86d3,
+    author={Hasib Zunair and A Ben Hamza},
+    title={Melanoma detection using adversarial training and deep transfer learning},
+    journal={Physics in Medicine & Biology},
+    url={http://iopscience.iop.org/10.1088/1361-6560/ab86d3},
+    year={2020}
+    
 ```
 
 
@@ -41,14 +47,14 @@ A conda file will be added soon!
 * In this directory, make a folder in `dataset` named `isic2016` and keep all files there
 * To build training set and test set
 
-```python data_process_isic2016.py
-
+```
+python data_process_isic2016.py
 ```
 
 * To sort images for training CycleGAN (two folders malignant and benign)
 
-```python data_process_gan.py
-
+```
+python data_process_gan.py
 ``` 
 
 

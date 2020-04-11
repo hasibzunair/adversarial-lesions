@@ -50,7 +50,7 @@ A conda file will be added soon!
 python data_process_isic2016.py
 ```
 
-* To sort images for training CycleGAN (two folders malignant and benign)
+* To partition the dataset for training CycleGAN (two folders malignant and benign)
 
 ```
 python data_process_gan.py
@@ -60,7 +60,7 @@ python data_process_gan.py
 
 ### Training (both stages)
 
-Now that the data is partitioned according to its class label (benign and malignant), we train CycleGAN on this data.
+Now that the data is partitioned according to its class label (benign and malignant), train CycleGAN on this data.
 
 * Run `train_cyclegan.ipynb`
 
@@ -83,7 +83,7 @@ Weight file for both the translation and classification model is made available 
 
 | Models | Weights|
 |:---:|:---:|
-| Generator | [isic2016_benign_to_malignant_cyclegan_generator.h5](https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/isic2016_benign_to_malignant_cyclegan_generator.h5) |
+| Generator | [generator.h5](https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/isic2016_benign_to_malignant_cyclegan_generator.h5) |
 | MelaNet | [MelaNet.h5](https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/MelaNet.h5) |
 
 
@@ -95,7 +95,7 @@ We report the AUC, Sensitivity and False negatives on the ISIC 2016 test set.
 <a href="#"><img src="media/test_results.png" width="100%"></a>
 </p>
 
-UMAP embeddings of the original benign and malignant lesions (left) and with the generated malignant lesions (right).
+UMAP embeddings of the original benign and malignant lesions (left) and with the generated malignant lesions (right). It can be seen that the generated malignant lesions are semantically more similar to the original malignant lesions than the benign lesions.
 
 <p align="left">
 <a href="#"><img src="media/umap.png" width="70%"></a>

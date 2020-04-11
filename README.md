@@ -19,12 +19,13 @@ Authors: Hasib Zunair and A. Ben Hamza
 ### Citation
 
 ```
-@article{10.1088/1361-6560/ab86d3,
-    author={Hasib Zunair and A Ben Hamza},
-    title={Melanoma detection using adversarial training and deep transfer learning},
-    journal={Physics in Medicine & Biology},
-    url={http://iopscience.iop.org/10.1088/1361-6560/ab86d3},
-    year={2020}
+@article{zunair2020melanoma,
+  title={Melanoma detection using adversarial training and deep transfer learning},
+  author={Zunair, Hasib and Hamza, A Ben},
+  journal={Physics in Medicine \& Biology},
+  year={2020},
+  publisher={IOP Publishing}
+}
 ```
 
 

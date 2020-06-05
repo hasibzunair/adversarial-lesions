@@ -57,11 +57,11 @@ python data_process_isic2016.py
 python data_process_gan.py
 ``` 
 
-
+You will see that this script creates two folders `trainA` and `trainB`. Due to my utter laziness, I created `testA` and `testB` folders manually which are required for visualizing the training process of the CycleGAN. For my experiments, `testA` consisted of an image from `trainA` and vice versa.
 
 ### Training (both stages)
 
-Now that the data is partitioned according to its class label (benign and malignant), train CycleGAN on this data.
+Now that the data is partitioned according to its class label (`trainA` -> benign and `trainB` -> malignant), train CycleGAN on this data.
 
 * Run `train_cyclegan.ipynb`
 

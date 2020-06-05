@@ -65,9 +65,9 @@ Now that the data is partitioned according to its class label (`trainA` -> benig
 
 * Run `train_cyclegan.ipynb`
 
-For generating the minority class (malignant) using the benign samples using the translation model:
+This will result in two models: `b2m.h5` and `m2b.h5` which translate from benign -> malignant and malignant -> benign respectively. For generating the minority class (malignant) using the benign samples using the translation model:
 
-* Run `upsampler.ipynb` to oversample and balance the dataset
+* Run `upsampler.ipynb` to oversample and balance the dataset. (Make sure you use `b2m.h5` if you train your model. The notebook uses the pretrained weight.)
 
 Train the classification model using the oversampled and balanced dataset
 

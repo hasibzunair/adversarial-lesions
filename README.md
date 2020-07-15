@@ -2,7 +2,7 @@
 
 ## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 
-This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* accepted for publication in the Journal of Physics in Medicine and Biology (PMB).
+This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* published in the Journal of Physics in Medicine and Biology (PMB).
 
 Full text of accepted version avaiable at [RG](https://www.researchgate.net/publication/340467505_Melanoma_detection_using_adversarial_training_and_deep_transfer_learning). 
 

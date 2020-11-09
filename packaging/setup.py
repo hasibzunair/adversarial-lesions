@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="melanet",
-    version="0.0.1",
+    version="0.0.2",
     author="Hasib Zunair",
     author_email="hasibzunair@gmail.com",
     description="MelaNet demo model.",

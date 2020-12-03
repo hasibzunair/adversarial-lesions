@@ -1,4 +1,4 @@
-# [Melanoma Detection using Adversarial Training and Deep Transfer Learning](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3)[[DEMO]](https://aiderm.herokuapp.com/)
+# [Melanoma Detection using Adversarial Training and Deep Transfer Learning](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3) [[DEMO](https://aiderm.herokuapp.com/)]
 
 ## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 

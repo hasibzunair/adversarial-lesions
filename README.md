@@ -37,9 +37,6 @@ This code requires
 * Tensorflow: 2.0.0
 * Keras: 2.3.1
 
-A conda file will be added soon!
-
-
 ### Preparing training and test datasets
 
 * Download dataset from https://challenge.kitware.com/#phase/5667455bcad3a56fac786791
@@ -106,6 +103,10 @@ UMAP embeddings of the original benign and malignant lesions (left) and with the
 ### Reference to other models
 
 Model definition scripts are based on https://github.com/eriklindernoren/Keras-GAN/tree/master/cyclegan and https://github.com/qubvel/classification_models.
+
+### Deploy
+
+A web app demo can be found at [https://aiderm.herokuapp.com/](https://aiderm.herokuapp.com/), incase you missed the link above! Source code for web app is at [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo).
 
 
 ### License

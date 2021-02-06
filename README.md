@@ -18,7 +18,7 @@ Authors: Hasib Zunair and A. Ben Hamza
 
 ### Citation
 
-```
+```bibtex
 @article{zunair2020melanoma,
   title={Melanoma detection using adversarial training and deep transfer learning},
   author={Zunair, Hasib and Hamza, A Ben},

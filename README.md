@@ -107,6 +107,7 @@ UMAP embeddings of the original benign and malignant lesions (left) and with the
 Model definition scripts are based on https://github.com/eriklindernoren/Keras-GAN/tree/master/cyclegan and https://github.com/qubvel/classification_models.
 
 ### Deploy
+* Model is packaged in a small library at [https://test.pypi.org/project/melanet/](https://test.pypi.org/project/melanet/)
 * Serve model via Streamlit web app: [https://github.com/hasibzunair/melanoma-detection-demo](https://github.com/hasibzunair/melanoma-detection-demo)
 * Serve model via a REST API endpoint: [https://github.com/hasibzunair/adversarial-lesions-rest-api-demo](https://github.com/hasibzunair/adversarial-lesions-rest-api-demo)
 

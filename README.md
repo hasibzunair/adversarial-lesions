@@ -41,7 +41,7 @@ This code requires
 
 ### Preparing training and test datasets
 
-* Download dataset from https://challenge.kitware.com/#phase/5667455bcad3a56fac786791
+* Download dataset from 2016, Task 3 (https://challenge.isic-archive.com/data)
 * Clone this repo (obviously!)
 * In this directory, make a folder in `dataset` named `isic2016` and keep all files there
 * To build training set and test set

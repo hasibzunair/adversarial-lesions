@@ -1,5 +1,8 @@
 # [Melanoma Detection using Adversarial Training and Deep Transfer Learning](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3) [[DEMO](https://aiderm.herokuapp.com/)]
 
+[![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hasibzunair/melanoma-detection-demo)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aiderm.herokuapp.com/)
+
 ## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 
 This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* published in the Journal of Physics in Medicine and Biology (PMB).

@@ -1,16 +1,11 @@
-# [Melanoma Detection using Adversarial Training and Deep Transfer Learning](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3)
+# Melanoma Detection using Adversarial Training and Deep Transfer Learning
 
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hasibzunair/melanoma-detection-demo)
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aiderm.herokuapp.com/)
 
-## aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
+### aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
 
-This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* published in the Journal of Physics in Medicine and Biology (PMB).
-
-Full text of accepted version avaiable at [RG](https://www.researchgate.net/publication/340467505_Melanoma_detection_using_adversarial_training_and_deep_transfer_learning). 
-
-Authors: Hasib Zunair and A. Ben Hamza
-
+This code is part of the supplementary materials for our paper titled *Melanoma Detection using Adversarial Training and Deep Transfer Learning* (Links: [arXiv](https://arxiv.org/abs/2004.06824), [PMB](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3).
 
 **TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective: we learn the interclass mappings(benign to malignant) and boost the minority class(malignant) using the orginal benign images and then train the classification model.
 

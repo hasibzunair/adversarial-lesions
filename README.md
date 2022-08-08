@@ -3,7 +3,7 @@
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hasibzunair/melanoma-detection-demo)
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aiderm.herokuapp.com/)
 
-### aka How to make skin lesions cancerous (in images) with Unpaired Image Translation
+### aka How to make benign skin lesions cancerous (in images!) with Unpaired Image Translation
 
 This code is part of the supplementary materials for our paper: 
 

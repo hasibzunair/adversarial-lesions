@@ -3,7 +3,7 @@
 [![Hugging Face Spaces](https://img.shields.io/badge/🤗%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/hasibzunair/melanoma-detection-demo)
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aiderm.herokuapp.com/)
 
-This is official code of Physics in Medicine and Biology Journal paper: <br>
+This is official code of Physics in Medicine and Biology paper: <br>
 *Melanoma Detection using Adversarial Training and Deep Transfer Learning* (Links: [arXiv](https://arxiv.org/abs/2004.06824), [PMB](https://iopscience.iop.org/article/10.1088/1361-6560/ab86d3)).
 
 aka How to make benign skin lesions cancerous (in images!) with Unpaired Image Translation

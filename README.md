@@ -8,7 +8,7 @@ This code is part of the supplementary materials for our paper: <br>
 
 aka How to make benign skin lesions cancerous (in images!) with Unpaired Image Translation
 
-**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective, by learning the interclass mappings (benign to malignant). And then boost the minority class (malignant) using the orginal benign images to generate malignant images and then train the classification model.
+**TL;DR** Interclass variation is considered an intimidating remark in medical image analysis. Here we demonstrate an opposite perspective, by learning the interclass mappings (benign to malignant). And then boost the minority class (malignant) using the orginal benign images to generate synthetic malignant images and then train classification models.
 
 <p align="left">
 <a href="#"><img src="media/visuals.png" width="75%"></a>

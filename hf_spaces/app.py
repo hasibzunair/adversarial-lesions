@@ -1,30 +1,33 @@
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
+import codecs
 import tensorflow as tf
 import keras.backend.tensorflow_backend as tb
-tb._SYMBOLIC_SCOPE.value = True
 import numpy as np
 import gradio as gr
 import cv2
 from PIL import Image
 from tensorflow.keras.models import load_model
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+tb._SYMBOLIC_SCOPE.value = True
+
 # Get model weights
-os.system("wget https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/MelaNet.h5")
+os.system(
+    "wget https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/MelaNet.h5"
+)
 
 # Load model
 model = None
 model = load_model("MelaNet.h5", compile=False)
 model.summary()
 
-# Path to examples and class label list
-examples = ["benign.png", "malignant.png"]
+# Class label list
 labels = ["Benign", "Malignant"]
 
 # Helpers
 def preprocess_image(img_array):
     # Normalize to [0,1]
-    img_array = img_array.astype('float32')
+    img_array = img_array.astype("float32")
     img_array /= 255
     # Check that images are 2D arrays
     if len(img_array.shape) > 2:
@@ -37,7 +40,9 @@ def preprocess_image(img_array):
 
 
 # Main inference function
-def inference(img):
+def inference(img_path):
+    img = Image.open(img_path).convert("RGB")
+    img = np.array(img)
     img = preprocess_image(img)
     img = np.expand_dims(img, 0)
     preds = model.predict(img)
@@ -46,16 +51,26 @@ def inference(img):
     labels_probs = {labels[i]: float(preds[i]) for i, _ in enumerate(labels)}
     return labels_probs
 
-title = "Melanoma Detection Demo"
-description = "This model predicts if the given image has benign or malignant symptoms. To use it, simply upload a skin lesion image, or click one of the examples to load them. Read more at the links below."
+
+title = "Melanoma Detection using Adversarial Training and Deep Transfer Learning"
+description = codecs.open("description.html", "r", "utf-8").read()
 article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2004.06824' target='_blank'>Melanoma Detection using Adversarial Training and Deep Transfer Learning</a> | <a href='https://github.com/hasibzunair/adversarial-lesions' target='_blank'>Github</a></p>"
 
-gr.Interface(
+
+demo = gr.Interface(
     fn=inference,
     title=title,
-    description = description,
+    description=description,
     article=article,
-    inputs="image",
+    inputs=gr.inputs.Image(type="filepath", label="Input"),
     outputs="label",
-    examples=examples,
-).launch(debug=True, enable_queue=True)
+    examples=[f"examples/{fname}.png" for fname in ["benign", "malignant"]],
+    allow_flagging="never",
+    analytics_enabled=False,
+)
+
+
+demo.launch(
+    # debug=True,
+    # enable_queue=True
+)

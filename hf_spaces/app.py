@@ -1,20 +1,18 @@
 import os
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 import codecs
-import tensorflow as tf
 import keras.backend.tensorflow_backend as tb
+
+tb._SYMBOLIC_SCOPE.value = True
 import numpy as np
 import gradio as gr
 import cv2
 from PIL import Image
 from tensorflow.keras.models import load_model
 
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
-tb._SYMBOLIC_SCOPE.value = True
-
 # Get model weights
-os.system(
-    "wget https://github.com/hasibzunair/adversarial-lesions/releases/latest/download/MelaNet.h5"
-)
+os.system("wget https://huggingface.co/hasibzunair/melanet/resolve/main/MelaNet.h5")
 
 # Load model
 model = None
@@ -56,7 +54,6 @@ title = "Melanoma Detection using Adversarial Training and Deep Transfer Learnin
 description = codecs.open("description.html", "r", "utf-8").read()
 article = "<p style='text-align: center'><a href='https://arxiv.org/abs/2004.06824' target='_blank'>Melanoma Detection using Adversarial Training and Deep Transfer Learning</a> | <a href='https://github.com/hasibzunair/adversarial-lesions' target='_blank'>Github</a></p>"
 
-
 demo = gr.Interface(
     fn=inference,
     title=title,
@@ -69,8 +66,4 @@ demo = gr.Interface(
     analytics_enabled=False,
 )
 
-
-demo.launch(
-    # debug=True,
-    # enable_queue=True
-)
+demo.launch()

@@ -78,7 +78,7 @@ The notebook `train_ISIC_2016.ipynb` consists the code to evalute on the ISIC 20
 
 ### Pre-trained weights
 
-Weight file for both the translation and classification model is made available under releases. 
+Weight file for both the translation and classification model is made available under releases. A 🤗 model card is also available [here](https://huggingface.co/hasibzunair/melanet).
 
 | Models | Weights|
 |:---:|:---:|
